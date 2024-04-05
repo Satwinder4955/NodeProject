@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+	<a class="navbar-brand" href="/">MY APP</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				<a class="nav-link px-2 text-white" href="/">Home</a>
+			</li>
+			{{#if user}}
+			<li class="nav-item">
+				<a class="nav-link px-2 text-white" href="/Products">Products</a>
+			</li>
+			{{/if}}
+		</ul>
+		<div class="text-end  my-2 my-lg-0">
+			{{#if user}}
+			<a class="btn btn-outline-light me-2" href="/#">{{user.username}}</a>
+			<a class="btn btn-warning" href="/logout">Logout</a>
+			{{else}}
+			<a class="btn btn-outline-light me-2" href="/register">Register</a>
+			<a  class="btn btn-warning" href="/login">Login</a>
+			{{/if}}
+		</div>
+	</div>
+</nav>

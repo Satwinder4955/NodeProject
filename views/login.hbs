@@ -1,0 +1,27 @@
+<main role="main" class="container">
+	<div class="starter-template">
+        <form class="form-signin" method="post">
+            <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input  class="form-control" name="username" id="username" placeholder="Email address*" required />
+            <br />
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input name="password" class="form-control" id="password" placeholder="Password*" type="password" required />
+            <br />
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            <a href="/github" class="btn btn-lg btn-dark btn-block">
+                Login with GitHub
+            </a>
+            <hr />
+            Need an account?
+            <a href="/register" title="Register">
+                Register
+            </a>
+            {{#if messages}}
+            <div class="alert alert-danger">
+                Invalid credentials
+            </div>
+            {{/if}}
+        </form>
+	</div>
+</main><!-- /.container -->
