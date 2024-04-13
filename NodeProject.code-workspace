@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Desktop/Project-React/bin"
+		},
+		{
+			"path": "../../../Desktop/Project-React/configs"
+		},
+		{
+			"path": "../../../Desktop/Project-React/extensions"
+		},
+		{
+			"path": "../../../Desktop/Project-React/models"
+		},
+		{
+			"path": "../../../Desktop/Project-React/node_modules"
+		}
+	],
+	"settings": {}
+}
